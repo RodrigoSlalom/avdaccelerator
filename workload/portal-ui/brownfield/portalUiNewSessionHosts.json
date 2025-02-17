@@ -1125,7 +1125,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagA",
+                                    "name": "tagstagsClassOfBusinessTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 1",
                                     "toolTip": "This defines my new tag. Number 1",
@@ -1137,7 +1137,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagB",
+                                    "name": "tagstagsApplicationNameTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 2",
                                     "toolTip": "This defines my new tag. Number 2",
@@ -1149,7 +1149,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagC",
+                                    "name": "tagstagsDataClassificationTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 3",
                                     "toolTip": "This defines my new tag. Number 3",
@@ -1161,7 +1161,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagD",
+                                    "name": "tagstagsBusinessImpactTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 4",
                                     "toolTip": "This defines my new tag. Number 4",
@@ -1173,7 +1173,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagE",
+                                    "name": "tagstagsOperatingEnvironmentTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 5",
                                     "toolTip": "This defines my new tag. Number 5",
@@ -1185,7 +1185,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagF",
+                                    "name": "tagstagsSecurityZoneTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 6",
                                     "toolTip": "This defines my new tag. Number 6",
@@ -1197,7 +1197,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagG",
+                                    "name": "tagstagsNewCostCenterTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 7",
                                     "toolTip": "This defines my new tag. Number 7",
@@ -1209,7 +1209,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagsMyNewTagH",
+                                    "name": "tagstagsSupportGroupTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 8",
                                     "toolTip": "This defines my new tag. Number 8",
@@ -1275,14 +1275,14 @@
                 "opsTeamTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOpsTeamTag, 'no')]",
                 "ownerTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOwnerTag, 'no')]",
                 "costCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsCostCenterTag, 'no')]",
-                "myNewTagA": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagA, 'no')]",
-                "myNewTagB": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagB, 'no')]",
-                "myNewTagC": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagC, 'no')]",
-                "myNewTagD": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagD, 'no')]",
-                "myNewTagE": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagE, 'no')]",
-                "myNewTagF": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagF, 'no')]",
-                "myNewTagG": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagG, 'no')]",
-                "myNewTagH": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagH, 'no')]",
+                "classOfBusinessTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.classOfBusinessTag, 'no')]",
+                "applicationNameTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.applicationNameTag, 'no')]",
+                "dataClassificationTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.dataClassificationTag, 'no')]",
+                "businessImpactTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.businessImpactTag, 'no')]",
+                "operatingEnvironmentTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.operatingEnvironmentTag, 'no')]",
+                "securityZoneTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.securityZoneTag, 'no')]",
+                "newCostCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.newCostCenterTag, 'no')]",
+                "supportGroupTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.supportGroupTag, 'no')]",
                 "computeRgResourceGroupName": "[steps('basics').resourceScope.resourceGroup.name]",
                 "computeSubscriptionId": "[steps('basics').resourceScope.subscription.subscriptionId]",
                 "location": "[steps('sessionHosts').sessionHostsRegionSection.sessionHostsRegion]",
