@@ -939,6 +939,62 @@
         "description": "Cost center of owner team. (Default: Contoso-CC)"
       }
     },
+    "myNewTagA": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 1"
+      }
+    },
+    "myNewTagB": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 2"
+      }
+    },
+    "myNewTagC": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 3"
+      }
+    },
+    "myNewTagD": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 4"
+      }
+    },
+    "myNewTagE": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 5"
+      }
+    },
+    "myNewTagF": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 6"
+      }
+    },
+    "myNewTagG": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 7"
+      }
+    },
+    "myNewTagH": {
+      "type": "string",
+      "defaultValue": "Value",
+      "metadata": {
+        "description": "Custom tag 7"
+      }
+    },
     "time": {
       "type": "string",
       "defaultValue": "[utcNow()]",
@@ -1706,7 +1762,7 @@
     "varAllDnsServers": "[format('{0},168.63.129.16', parameters('customDnsIps'))]",
     "varDnsServers": "[if(empty(parameters('customDnsIps')), createArray(), split(variables('varAllDnsServers'), ','))]",
     "varCreateVnetPeering": "[if(not(empty(parameters('existingHubVnetResourceId'))), true(), false())]",
-    "varCustomResourceTags": "[if(parameters('createResourceTags'), createObject('WorkloadName', parameters('workloadNameTag'), 'WorkloadType', parameters('workloadTypeTag'), 'DataClassification', parameters('dataClassificationTag'), 'Department', parameters('departmentTag'), 'Criticality', if(equals(parameters('workloadCriticalityTag'), 'Custom'), parameters('workloadCriticalityCustomValueTag'), parameters('workloadCriticalityTag')), 'ApplicationName', parameters('applicationNameTag'), 'ServiceClass', parameters('workloadSlaTag'), 'OpsTeam', parameters('opsTeamTag'), 'Owner', parameters('ownerTag'), 'CostCenter', parameters('costCenterTag')), createObject())]",
+    "varCustomResourceTags": "[if(parameters('createResourceTags'),createObject('WorkloadName', parameters('workloadNameTag'),'WorkloadType', parameters('workloadTypeTag'),'DataClassification', parameters('dataClassificationTag'),'Department',  parameters('departmentTag'),'Criticality', if(equals(parameters('workloadCriticalityTag'), 'Custom'), parameters('workloadCriticalityCustomValueTag'), parameters('workloadCriticalityTag')),'ApplicationName', parameters('applicationNameTag'),'ServiceClass', parameters('workloadSlaTag'),'OpsTeam', parameters('opsTeamTag'),'Owner', parameters('ownerTag'),'CostCenter', parameters('costCenterTag'), 'myNewTagA', parameters('myNewTagA'),'myNewTagB', parameters('myNewTagB'), 'myNewTagC', parameters('myNewTagC'),'myNewTagD', parameters('myNewTagD'),'myNewTagE', parameters('myNewTagE'),'myNewTagF', parameters('myNewTagF'),'myNewTagG', parameters('myNewTagG'),'myNewTagH', parameters('myNewTagH')), createObject())]",
     "varAllComputeStorageTags": {
       "DomainName": "[parameters('identityDomainName')]",
       "IdentityServiceProvider": "[parameters('avdIdentityServiceProvider')]"

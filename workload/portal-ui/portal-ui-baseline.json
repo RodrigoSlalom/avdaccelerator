@@ -24,7 +24,7 @@
                             "visible": true,
                             "options": {
                                 "text": "PREREQUISITES REQUIRED \n\nThere are prerequisites that must be setup in your Azure environment to successfully deploy this Azure Virtual Desktop Landing Zone Accelerator. Click here to review the prerequisites in the Getting Started guide.",
-                                "uri": "https://github.com/Azure/avdaccelerator/blob/main/workload/docs/getting-started-baseline.md",
+                                "uri": "https://github.com/RodrigoSlalom/avdaccelerator/blob/main/workload/docs/getting-started-baseline.md",
                                 "style": "Warning"
                             }
                         },
@@ -32,9 +32,9 @@
                             "name": "infoPreReqCheckbox",
                             "type": "Microsoft.Common.CheckBox",
                             "visible": true,
-                            "label": "I have read and understand the Azure Virtual Desktop LZA deployment pre-requisites",
+                            "label": "I have read and I understand the Azure Virtual Desktop LZA deployment pre-requisites",
                             "defaultValue": false,
-                            "toolTip": "I have read and understand the Azure Virtual Desktop LZA deployment pre-requisites.",
+                            "toolTip": "I have read and I understand the Azure Virtual Desktop LZA deployment pre-requisites.",
                             "constraints": {
                                 "required": true
                             }
@@ -175,7 +175,7 @@
                                     "visible": "[not(equals(steps('identity').identityDomainInformation.identityServiceProvider, 'EntraID'))]",
                                     "options": {
                                         "text": "Identity service provider must already exist, as it is a prerequisite for the Azure Virtual Desktop LZA deployment.",
-                                        "uri": "https://github.com/Azure/avdaccelerator/blob/main/workload/docs/getting-started.md",
+                                        "uri": "https://github.com/RodrigoSlalom/avdaccelerator/blob/main/workload/docs/getting-started.md",
                                         "style": "Info"
                                     }
                                 },
@@ -787,7 +787,7 @@
                                     "visible": "[steps('sessionHosts').sessionHostsOsSection.sessionHostsImageSource]",
                                     "options": {
                                         "text": "The Compute Gallery Image definition selected must have the 'isAcceleratedNetworkSupported' feature property set to 'true' if you enable accelerated networking on the session hosts.",
-                                        "uri": "https://github.com/Azure/avdaccelerator/blob/main/workload/docs/getting-started-baseline.md",
+                                        "uri": "https://github.com/RodrigoSlalom/avdaccelerator/blob/main/workload/docs/getting-started-baseline.md",
                                         "style": "Warning"
                                     }
                                 }
@@ -1753,7 +1753,7 @@
                             "visible": true,
                             "options": {
                                 "text": "Azure Virtual Desktop LZA default naming scheme is shown in this diagram.",
-                                "uri": "https://github.com/Azure/avdaccelerator/blob/main/workload/docs/diagrams/avd-accelerator-resource-organization-naming.png",
+                                "uri": "https://github.com/RodrigoSlalom/avdaccelerator/blob/main/workload/docs/diagrams/avd-accelerator-resource-organization-naming.png",
                                 "style": "Info"
                             }
                         },
@@ -2485,6 +2485,102 @@
                                         "regex": "^[a-z0-9A-Z-]{1,256}$",
                                         "validationMessage": "Value must be 1-256 characters."
                                     }
+                                },
+                                {
+                                    "name": "tagsMyNewTagA",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 1",
+                                    "toolTip": "This defines my new tag. Number 1",
+                                    "placeholder": "Example: Tag 1",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagB",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 2",
+                                    "toolTip": "This defines my new tag. Number 2",
+                                    "placeholder": "Example: Tag 2",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagC",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 3",
+                                    "toolTip": "This defines my new tag. Number 3",
+                                    "placeholder": "Example: Tag 3",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagD",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 4",
+                                    "toolTip": "This defines my new tag. Number 4",
+                                    "placeholder": "Example: Tag 4",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagE",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 5",
+                                    "toolTip": "This defines my new tag. Number 5",
+                                    "placeholder": "Example: Tag 5",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagF",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 6",
+                                    "toolTip": "This defines my new tag. Number 6",
+                                    "placeholder": "Example: Tag 6",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagG",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 7",
+                                    "toolTip": "This defines my new tag. Number 7",
+                                    "placeholder": "Example: Tag 7",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagH",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 8",
+                                    "toolTip": "This defines my new tag. Number 8",
+                                    "placeholder": "Example: Tag 8",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
                                 }
                             ]
                         }
@@ -2594,6 +2690,14 @@
                 "opsTeamTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOpsTeamTag, 'no')]",
                 "ownerTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOwnerTag, 'no')]",
                 "costCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsCostCenterTag, 'no')]",
+                "myNewTagA": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagA, 'no')]",
+                "myNewTagB": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagB, 'no')]",
+                "myNewTagC": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagC, 'no')]",
+                "myNewTagD": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagD, 'no')]",
+                "myNewTagE": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagE, 'no')]",
+                "myNewTagF": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagF, 'no')]",
+                "myNewTagG": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagG, 'no')]",
+                "myNewTagH": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsMyNewTagH, 'no')]",
                 "securityPrincipalId": "[if(steps('identity').identityAvdAccess.identityAvdUserAccessGroupCheckBox, steps('identity').identityAvdAccess.identityAvdUserAccessGroupTextBox2, steps('identity').identityAvdAccess.identityAvdUserAccessGroupDropDown.id)]",
                 "securityPrincipalName": "[if(steps('identity').identityAvdAccess.identityAvdUserAccessGroupCheckBox, steps('identity').identityAvdAccess.identityAvdUserAccessGroupTextBox1, steps('identity').identityAvdAccess.identityAvdUserAccessGroupDropDown.name)]",
                 "avdDeployMonitoring": "[steps('monitoring').deployMonitoring]",

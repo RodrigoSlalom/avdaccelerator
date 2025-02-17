@@ -1123,6 +1123,102 @@
                                         "regex": "^[a-z0-9A-Z-]{1,256}$",
                                         "validationMessage": "Value must be 1-256 characters."
                                     }
+                                },
+                                {
+                                    "name": "tagsMyNewTagA",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 1",
+                                    "toolTip": "This defines my new tag. Number 1",
+                                    "placeholder": "Example: Tag 1",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagB",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 2",
+                                    "toolTip": "This defines my new tag. Number 2",
+                                    "placeholder": "Example: Tag 2",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagC",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 3",
+                                    "toolTip": "This defines my new tag. Number 3",
+                                    "placeholder": "Example: Tag 3",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagD",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 4",
+                                    "toolTip": "This defines my new tag. Number 4",
+                                    "placeholder": "Example: Tag 4",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagE",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 5",
+                                    "toolTip": "This defines my new tag. Number 5",
+                                    "placeholder": "Example: Tag 5",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagF",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 6",
+                                    "toolTip": "This defines my new tag. Number 6",
+                                    "placeholder": "Example: Tag 6",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagG",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 7",
+                                    "toolTip": "This defines my new tag. Number 7",
+                                    "placeholder": "Example: Tag 7",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
+                                },
+                                {
+                                    "name": "tagsMyNewTagH",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "My New Tag - 8",
+                                    "toolTip": "This defines my new tag. Number 8",
+                                    "placeholder": "Example: Tag 8",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,256}$",
+                                        "validationMessage": "Value must be 1-256 characters."
+                                    }
                                 }
                             ]
                         }
@@ -1179,6 +1275,14 @@
                 "opsTeamTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOpsTeamTag, 'no')]",
                 "ownerTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOwnerTag, 'no')]",
                 "costCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsCostCenterTag, 'no')]",
+                "myNewTagA": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagA, 'no')]",
+                "myNewTagB": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagB, 'no')]",
+                "myNewTagC": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagC, 'no')]",
+                "myNewTagD": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagD, 'no')]",
+                "myNewTagE": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagE, 'no')]",
+                "myNewTagF": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagF, 'no')]",
+                "myNewTagG": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagG, 'no')]",
+                "myNewTagH": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.myNewTagH, 'no')]",
                 "computeRgResourceGroupName": "[steps('basics').resourceScope.resourceGroup.name]",
                 "computeSubscriptionId": "[steps('basics').resourceScope.subscription.subscriptionId]",
                 "location": "[steps('sessionHosts').sessionHostsRegionSection.sessionHostsRegion]",
