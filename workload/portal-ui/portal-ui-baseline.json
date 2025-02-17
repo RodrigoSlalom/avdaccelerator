@@ -2487,10 +2487,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsClassOfBusinessTag",
+                                    "name": "tagsClassOfBusinessTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 1",
-                                    "toolTip": "This defines my new tag. Number 1",
+                                    "label": "ClassOfBusiness",
+                                    "toolTip": "Field for the value ClassOfBusiness",
                                     "placeholder": "Example: Tag 1",
                                     "constraints": {
                                         "required": true,
@@ -2499,10 +2499,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsApplicationNameTag",
+                                    "name": "tagsApplicationNameTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 2",
-                                    "toolTip": "This defines my new tag. Number 2",
+                                    "label": "ApplicationName",
+                                    "toolTip": "Field for the value ApplicationName",
                                     "placeholder": "Example: Tag 2",
                                     "constraints": {
                                         "required": true,
@@ -2511,10 +2511,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsDataClassificationTag",
+                                    "name": "tagsDataClassificationTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 3",
-                                    "toolTip": "This defines my new tag. Number 3",
+                                    "label": "DataClassification",
+                                    "toolTip": "This Field for the value DataClassification",
                                     "placeholder": "Example: Tag 3",
                                     "constraints": {
                                         "required": true,
@@ -2523,10 +2523,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsBusinessImpactTag",
+                                    "name": "tagsBusinessImpactTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 4",
-                                    "toolTip": "This defines my new tag. Number 4",
+                                    "label": "BusinessImpact",
+                                    "toolTip": "Field for the value BusinessImpact",
                                     "placeholder": "Example: Tag 4",
                                     "constraints": {
                                         "required": true,
@@ -2535,10 +2535,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsOperatingEnvironmentTag",
+                                    "name": "tagsOperatingEnvironmentTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 5",
-                                    "toolTip": "This defines my new tag. Number 5",
+                                    "label": "OperatingEnvironment",
+                                    "toolTip": "This defines Field for the value OperatingEnvironment",
                                     "placeholder": "Example: Tag 5",
                                     "constraints": {
                                         "required": true,
@@ -2547,10 +2547,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsSecurityZoneTag",
+                                    "name": "tagsSecurityZoneTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 6",
-                                    "toolTip": "This defines my new tag. Number 6",
+                                    "label": SecurityZone6",
+                                    "toolTip": "Field for the value SecurityZone",
                                     "placeholder": "Example: Tag 6",
                                     "constraints": {
                                         "required": true,
@@ -2559,10 +2559,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsNewCostCenterTag",
+                                    "name": "tagsNewCostCenterTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 7",
-                                    "toolTip": "This defines my new tag. Number 7",
+                                    "label": "NewCostCenter",
+                                    "toolTip": "Field for the value NewCostCenter",
                                     "placeholder": "Example: Tag 7",
                                     "constraints": {
                                         "required": true,
@@ -2571,10 +2571,10 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsSupportGroupTag",
+                                    "name": "tagsSupportGroupTag",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "My New Tag - 8",
-                                    "toolTip": "This defines my new tag. Number 8",
+                                    "label": SupportGroup8",
+                                    "toolTip": "Field for the value SupportGroup",
                                     "placeholder": "Example: Tag 8",
                                     "constraints": {
                                         "required": true,
@@ -2690,14 +2690,14 @@
                 "opsTeamTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOpsTeamTag, 'no')]",
                 "ownerTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOwnerTag, 'no')]",
                 "costCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsCostCenterTag, 'no')]",
-                "classOfBusinessTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsClassOfBusinessTag, 'no')]",
-                "applicationNameTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsApplicationNameTag, 'no')]",
-                "dataClassificationTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsDataClassificationTag, 'no')]",
-                "businessImpactTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsBusinessImpactTag, 'no')]",
-                "operatingEnvironmentTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsOperatingEnvironmentTag, 'no')]",
-                "securityZoneTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsSecurityZoneTag, 'no')]",
-                "newCostCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsNewCostCenterTag, 'no')]",
-                "supportGroupTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagstagsSupportGroupTag, 'no')]",
+                "classOfBusinessTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsClassOfBusinessTag, 'no')]",
+                "applicationNameTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsApplicationNameTag, 'no')]",
+                "dataClassificationTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsDataClassificationTag, 'no')]",
+                "businessImpactTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsBusinessImpactTag, 'no')]",
+                "operatingEnvironmentTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsOperatingEnvironmentTag, 'no')]",
+                "securityZoneTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsSecurityZoneTag, 'no')]",
+                "newCostCenterTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsNewCostCenterTag, 'no')]",
+                "supportGroupTag": "[if(equals(steps('resourceTagging').resourceTaggingSelection, true), steps('resourceTagging').resourceTags.tagsSupportGroupTag, 'no')]",
                 "securityPrincipalId": "[if(steps('identity').identityAvdAccess.identityAvdUserAccessGroupCheckBox, steps('identity').identityAvdAccess.identityAvdUserAccessGroupTextBox2, steps('identity').identityAvdAccess.identityAvdUserAccessGroupDropDown.id)]",
                 "securityPrincipalName": "[if(steps('identity').identityAvdAccess.identityAvdUserAccessGroupCheckBox, steps('identity').identityAvdAccess.identityAvdUserAccessGroupTextBox1, steps('identity').identityAvdAccess.identityAvdUserAccessGroupDropDown.name)]",
                 "avdDeployMonitoring": "[steps('monitoring').deployMonitoring]",

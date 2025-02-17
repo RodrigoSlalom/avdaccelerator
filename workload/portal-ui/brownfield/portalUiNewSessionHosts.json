@@ -1125,7 +1125,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsClassOfBusinessTag",
+                                    "name": "tagsClassOfBusinessTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 1",
                                     "toolTip": "This defines my new tag. Number 1",
@@ -1137,7 +1137,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsApplicationNameTag",
+                                    "name": "tagsApplicationNameTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 2",
                                     "toolTip": "This defines my new tag. Number 2",
@@ -1149,7 +1149,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsDataClassificationTag",
+                                    "name": "tagsDataClassificationTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 3",
                                     "toolTip": "This defines my new tag. Number 3",
@@ -1161,7 +1161,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsBusinessImpactTag",
+                                    "name": "tagsBusinessImpactTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 4",
                                     "toolTip": "This defines my new tag. Number 4",
@@ -1173,7 +1173,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsOperatingEnvironmentTag",
+                                    "name": "tagsOperatingEnvironmentTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 5",
                                     "toolTip": "This defines my new tag. Number 5",
@@ -1185,7 +1185,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsSecurityZoneTag",
+                                    "name": "tagsSecurityZoneTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 6",
                                     "toolTip": "This defines my new tag. Number 6",
@@ -1197,7 +1197,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsNewCostCenterTag",
+                                    "name": "tagsNewCostCenterTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 7",
                                     "toolTip": "This defines my new tag. Number 7",
@@ -1209,7 +1209,7 @@
                                     }
                                 },
                                 {
-                                    "name": "tagstagsSupportGroupTag",
+                                    "name": "tagsSupportGroupTag",
                                     "type": "Microsoft.Common.TextBox",
                                     "label": "My New Tag - 8",
                                     "toolTip": "This defines my new tag. Number 8",
